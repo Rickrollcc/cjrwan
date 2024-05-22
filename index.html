@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="res/520.css" rel="stylesheet" />
+    <title>陈佳嵘我爱你</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>陈佳嵘我爱你</h1>
+        <p>爱你一生一世，我喜欢你❤️和我结婚吧🤩！</p>
+        <img id="image" alt="" width="300px" height="300px">
+        <p>powered by wbgx.pw</p>
+        <script>
+            var curIndex = 0; //当前下标
+            var arr = new Array(); //图片数组
+            arr[0] = "/res/-2308a4f7e2d88b00.jpg"; //图片路径
+            arr[1] = "/res/-646945cfd8836944.jpg";
+            arr[2] = "/res/-78e3fa3d1f930944.jpg";
+            arr[3] = "/res/-7abe3d52435a9337.jpg";
+            arr[4] = "/res/285e2f9c8568b39a.jpg";
+            arr[5] = "/res/1716383957397.jpeg"; //图片路径
+            arr[6] = "/res/1716392229992.jpeg";
+            arr[7] = "/res/1716392385002.jpeg";
+            arr[8] = "/res/1716392393590.jpeg";
+            arr[9] = "/res/1716392242275.jpeg";
+            arr[10] = "/res/1716392250538.jpeg"; //图片路径
+            arr[11] = "/res/1716383989759.jpeg";
+            arr[12] = "/res/1716383986287.jpeg";
+            setInterval(function() {
+                var obj = document.getElementById("image");
+                if (curIndex == arr.length - 1) {
+                    curIndex = 0;
+                } else {
+                    curIndex += 1;
+                }
+                obj.src = arr[curIndex];
+            }, 2000);
+        </script>
+    </div>
+
+  <audio autoplay><source src="/res/lv_0_20240522233330.mp3"></audio>
+</body>
+
+</html>
